@@ -5,7 +5,7 @@ import redis
 # Connexion
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
-# Récupération directe de l'ID 1
+# Récupération directe de l'ID 1 à 5
 prenom_1 = r.get("user:1")
 prenom_2 = r.get("user:2")
 prenom_3 = r.get("user:3")
